@@ -61,3 +61,49 @@
 * Commit the Content
     ```git 
     git commit -m "file.txt" ```
+* Viewing Commiting history
+    ```git 
+    git log
+    git log --online   //Consise version of log commiting history
+    ```
+
+### Creating Repository
+* Create your [github repo](https://github.com/)
+* By clicking new repo with required info create a new github repo
+* Using cli
+    ```git 
+    echo "# gitPractice" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin repolink.git
+    git push -u origin main
+    ```
+
+### Push to a remote repo
+* By initializing a local repo
+    ```git 
+    echo "# gitPractice" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin repolink.git
+    git push -u origin main
+    ```
+* if initialized already
+    ```
+    git remote add origin git@github.com:nayanGowdaM/gitPractice.git
+    git push -u origin main
+    ```
+* If you donot have a local repo them clone the github repo into your local system
+    ```git 
+    git add README.md
+    git commit -m "commit file"
+    git push -u origin main
+    ```
+### To know the remote repo name
+```git 
+git remote --verbose
+```
