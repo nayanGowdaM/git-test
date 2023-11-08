@@ -66,6 +66,9 @@
     git log
     git log --online   //Consise version of log commiting history
     ```
+* For viewing git tree
+    ```git 
+    git log --oneline --graph```
 
 ### Creating Repository
 * Create your [github repo](https://github.com/)
@@ -105,5 +108,15 @@
     ```
 ### To know the remote repo name
 ```git 
-git remote --verbose
+git remote --v
 ```
+
+### show Command
+* Getting commit info using sha1 / git id of that commit
+    ```git
+        git show git_id_of that particular commit
+        ```
+* Referencing
+    ```git 
+    git show HEAD
+    ```
