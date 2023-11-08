@@ -68,7 +68,8 @@
     ```
 * For viewing git tree
     ```git 
-    git log --oneline --graph```
+    git log --oneline --graph
+    ```
 
 ### Creating Repository
 * Create your [github repo](https://github.com/)
@@ -112,11 +113,37 @@ git remote --v
 ```
 
 ### show Command
+* Listing commit and git ids
+    ```git 
+    git log --oneline --graph
+    ```
 * Getting commit info using sha1 / git id of that commit
     ```git
         git show git_id_of that particular commit
-        ```
+    ```
 * Referencing
     ```git 
     git show HEAD
     ```
+    HEAD~n nth commit from HEAD
+    HEAD^n nth parent for HEAD
+    HEAD^^ 1st parent of 1st parent of HEAD
+
+### Branching
+* Listing the branches
+    ```git
+    git branch
+    ```
+* Creating a branch
+    ```git
+    git branch branch_name
+    ```
+* Checkout 
+    * Based on Branch
+        ```git
+        git checkout branchname  
+        ```
+    * Based on commit or git/sha id
+        ```git 
+        git checkout commit
+        ```
