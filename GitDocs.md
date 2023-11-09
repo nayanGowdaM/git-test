@@ -147,3 +147,7 @@ git remote --v
         ```git 
         git checkout commit
         ```
+    * Deleting a branch 
+        ```git 
+        git branch -d branch_name
+        ```
